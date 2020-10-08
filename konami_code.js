@@ -18,7 +18,7 @@ function init() {
   document.body.addEventListener("keydown", (event) => {
     // Now, how can we check for which specific key was pressed?
     
-    const key = e.key;
+    const key = event.key;
  
     if (key === codes[index]) {
       index++;
