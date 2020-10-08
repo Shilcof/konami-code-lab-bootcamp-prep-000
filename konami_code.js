@@ -12,9 +12,7 @@ const codes = [
 ];
 
 function init() {
-  // your code here
   
-  // Attaching an keydown event listener to document.body
   document.body.addEventListener("keydown", (event) => {
     // Now, how can we check for which specific key was pressed?
     
@@ -26,5 +24,11 @@ function init() {
       console.log(e.key);
     });
     
-  }
+    if (e.key === "g") {
+      return e.preventDefault()
+    } else {
+      console.log(e.key)
+    }
+    
+  })
 }
